@@ -1,0 +1,489 @@
+* {
+    font-family: 'Reem Kufi';
+}
+
+body {
+    width: 100%;
+    background-image: url("bilder/back2.png");
+    background-color: gray;
+    margin: 0px;
+    background-size: cover;
+    min-height: 100%;
+    
+}
+
+header {
+    background-image: url("bilder/header2.png");
+    background-color:gray;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+
+/*sidans innehåll*/
+
+main {
+    display: block;
+    width: 100%; 
+    padding-top: 3%;
+    
+    
+}
+
+main.huvudsidan{
+    margin: 0 auto;
+    
+}
+
+section.huvudsidan {
+    
+    width: 80%;
+    min-width: 250px;
+    max-width: 766px;
+    background-color: #272C2B;
+    border: 1px solid #272C2B;
+    border-radius: 10px;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0 auto;
+    color:#B99973;
+    padding:5px;
+}
+
+main p {
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+main h1 {
+    text-shadow: 2px 2px #080706;
+    font-size: 2rem;
+
+}
+
+/*logo*/
+
+#logo {
+    display: block;
+    width: 35%;
+    height: auto;
+    top: 20%;
+    position: absolute;
+    z-index: 2;
+    
+}
+
+/*Navbar starts*/
+
+.nav {
+    width: 100%;
+    background-color: #272C2B;
+    justify-content: center;
+    max-height: .1rem 1rem;
+    position: relative;  
+
+}
+
+
+.nav a {
+    color: #DCEBF0;
+    font-size: 21px;
+    /* font-family: 'Reem Kufi'; */
+}
+
+.nav-pills a {
+    padding: .5rem 3rem;  
+}
+
+.nav-pills :hover {
+    background-color: #B99973;
+    display: block;
+    border: 1px solid #B99973;
+    border-radius: 10px;
+    opacity: 0.9;
+    position: relative;
+}
+
+/*Pictures animation*/
+
+div.PicHolder {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(195, 162, 124, 0.5);
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.PicHolder img {
+    width: 12%;
+    animation-name: floating;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    0% {transform: translate(650%, 0px);}
+    100% { transform: translate(-650%, 0px); }    
+}
+
+/*footer*/
+
+footer {
+    background-image: url("bilder/footer 2.png");
+    color:#B99973;
+    border: none;
+    width: 100%;
+    border-top: none;
+    height: 3rem;
+    bottom: 0px;
+    position: fixed;
+
+}
+
+footer.border-top {
+    border-top: none!important;
+}
+
+footer ul.nav {
+    background-color: #B99973;
+    border: 1px solid #B99973;
+    border-radius: 5px;
+    width: 150px;
+    justify-content: center;
+}
+
+
+footer ul li {
+    background-color: #B99973;
+}
+
+footer.py-3 {
+    padding: 0!important;
+}
+
+footer.my-4 {
+    margin-bottom: 0px!important;
+}
+
+/*footer ends*/
+
+
+/*filmer*/
+
+
+.filmcontainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+}
+
+.PicsWrap {
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+    
+
+    
+}
+img.galleryPics{
+    border: 13px solid #B99973;
+    border-radius: 5%;
+    width: 75%;
+    height: 100%;
+    min-width: 250px;
+    
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #272C2B;
+    color: #B99973;
+    width:100%;
+    justify-content: space-between;
+    text-align: center;
+    text-align: justify;
+    margin-right: 5%;
+ 
+}
+
+.modal-content h2 {
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    padding-top: 1%;
+}
+
+.modal-content img {
+    padding: 2%;
+    float: left;
+    padding-right: 5%; 
+    height: auto;
+}
+
+.modal-content p {
+    padding: 2%;
+    
+}
+
+.modal-dialog {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 15%;
+}
+
+ 
+  
+/*CSS för kontaktformuläret*/
+
+.container {
+    padding-bottom: 10%;
+}
+
+
+.mb-3 {
+    
+    width: 70%;
+    min-width: 350px;
+    font-family: 'Reem Kufi';
+    color: #B99973;
+      
+}
+
+.form-background {
+    
+    width: 50%;
+    min-width: 450px;
+    background-color: #272C2B;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5%; 
+}
+
+ div button {
+    color: white;
+    background-color: #B99973;   
+    width: 65px;
+    margin-top: 20px;
+    margin-left: 9px;
+    border-radius: 10px;
+    font-family: 'Reem Kufi'; 
+}
+
+.form-control {
+    margin-left: 10px;
+    width: 10px;
+}
+
+.form-label {
+    padding: 10px;
+}
+
+.h1-contact {
+    font-size: 30px; 
+    margin-left: 7px;
+    margin-top: 30px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    
+}
+
+/*responsive design*/
+
+/*Mobile styles*/
+@media screen and (max-width: 520px){
+
+    .huvudsidan p {
+        text-align: justify;
+        padding: 2%;
+    }
+
+    .huvudsidan h1 {
+        font-size: x-large;
+        padding: 2%;
+    }
+
+    .nav.nav-pills {
+        margin-top: 30%;
+    }
+    
+    .nav-pills li  {
+        padding: .4rem 4rem;  
+     
+    }
+
+    header {
+        background-image: none;
+        background-color:#272C2B;
+        height: 80%;
+        min-height: 150px;
+    }
+
+    div#logo {
+        top: 0px;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    section.huvudsidan {
+        width: 60%;
+        min-width: 300px;
+        max-width: 600px;
+       }
+
+    
+    div.PicHolder  {
+        display: none;
+    }
+
+    .modal-dialog {
+        margin: 0 auto;
+        
+    }
+
+    .modal-content h2 {
+        text-align: center;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        padding-top: 1%;
+    }
+
+    .modal-content {
+        display: block;
+        text-align: justify;
+        padding: 3%;
+    }
+
+    .modal-content img {
+        width:100%;
+        padding-bottom:6%;
+        padding-right: 0%;
+        padding-top: 1%;
+
+    }
+
+    .filmcontainer {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+       
+    }
+
+    .mb-3 {
+        margin: 0 auto;
+        min-width: 200px;
+    }
+    
+
+    .container {
+        padding-bottom: 10%;
+        min-width: none;
+    }
+
+
+
+    .mb-3 h1 {
+        font-size: x-large;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        margin-left:  0px;
+    }
+
+   .form-control {
+        margin-left: 0px;
+   }
+
+   .form-label {
+       margin-left: 0px;
+       padding-left: 0px;
+
+   }
+
+   .form-background {
+       min-width: 250px;
+   }
+    
+  
+
+}
+
+
+/*Tablet styles*/
+
+@media screen and (min-width: 521px) and (max-width: 768px)  {
+
+    .huvudsidan p {
+        
+        text-align: center;
+        padding: 2%;
+    }
+
+    .huvudsidan h1 {
+        font-size: x-large;
+        padding: 2%;
+    }
+
+    footer ul.nav {
+        margin: 0px auto;
+    }
+
+    .modal-dialog {
+        margin: 0 auto;
+        margin-top:10%;
+    }
+
+    .modal-content {
+        text-align: justify;
+        padding: 3%;
+    }
+
+    .modal-content img {
+        padding: 2%;
+        float: left;
+        padding-right: 5%; 
+        height: auto;
+    }
+
+    .form-background {
+    
+        width: 80%;
+       
+    }
+
+    .mb-3 {
+        margin:0 auto;
+        width: 80%;
+    }
+
+    .mb-3 h1 {
+        font-size: x-large;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        margin-left:  0px;
+    }
+
+   .form-control {
+    margin-left: 0px;
+   
+   }
+
+   .form-label {
+       margin-left: 0px;
+       padding-left: 0px;
+   }
+
+}
+
+
+
+  
